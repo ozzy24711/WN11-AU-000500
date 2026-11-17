@@ -50,4 +50,18 @@ if (-not (Test-Path $path)) {
 New-ItemProperty -Path $path -Name 'MaxSize' -Value 0x8000 -PropertyType DWord -Force | Out-Null
 
 # Check the result
-Get-ItemProperty -Path
+Get-ItemProperty -Path $path -Name 'MaxSize' | Select-Object MaxSize
+````
+
+![PowerShell script](image4.png)
+
+**After:** rescanned with the same scan → **Passed** ✅
+
+![After PowerShell - Passed](image6.png)
+
+### Takeaway
+
+A bigger log means evidence sticks around long enough for analysts to investigate.
+````
+
+The ```` ``` ```` on the second line has to be on its own line. It closes the code box. Commit, then refresh and check it.
