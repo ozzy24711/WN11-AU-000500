@@ -64,4 +64,3 @@ Get-ItemProperty -Path $path -Name 'MaxSize' | Select-Object MaxSize
 A bigger log means evidence sticks around long enough for analysts to investigate.
 ````
 
-The ```` ``` ```` on the second line has to be on its own line. It closes the code box. Commit, then refresh and check it.
