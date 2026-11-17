@@ -62,5 +62,3 @@ Get-ItemProperty -Path $path -Name 'MaxSize' | Select-Object MaxSize
 ### Takeaway
 
 A bigger log means evidence sticks around long enough for analysts to investigate.
-````
-
